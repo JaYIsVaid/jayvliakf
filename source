@@ -1,74 +1,26 @@
--- [[ Settings ]] --
-
-getgenv().prefix = '!' -- prefix which should run the commands
-getgenv().controller = 3142630952 -- id of whitelisted user, requirements: whitelisted, in group as premium role, note the controller must join before alts
-
-getgenv().gui = true -- recommneded to be on, to load UI on controller!
-getgenv().lag_reducer = true -- recommended to be on, reduce lag a lot!
-
-getgenv().sendadevery = 15 -- in second
-
-getgenv().alts = { -- max 38 alts
-    Alt1 = 2750704446, -- Alt3, etc make sure all have "," after each alt
+--[[
+Da Hub Alt Control
+]]
+--DA HUB ALT CONTROL KEEP IN AUTO EXEC
+repeat
+wait()
+until
+game:IsLoaded()
+getgenv().Settings = {
+ ["Host"] = "VHTTALT7",
+ ["Prefix"] = "!",
+ ["FPS"] = 60,
+ ["Ad"] = "j$y on top",
+ ["Advertise"] = false,
+ ["AdWaitTime"] = 10,
+ ["WebHookMode"] = false,
+ ["Webhookurl"] = "WEBHOOKHERE", ---webhook here
+ ["NotificationMode"] = true, 
+ ["GodMode"] = false,
+ ["AutoMask"] = false,
+ ["AutoHide"] = false,
+ ["Alt1"] = "Qwers_67", --Alts can go up to 20 ["Alt20"] = "user"
+ ["Alt2"] = "altname2",
+ ["Alt3"] = "altname3",
 }
-
-getgenv().commands = { -- change "commands" to anything else you want drop to run when you say, same for others down
-    ['QITKOT_CommandsList'] = "commands",
-    ['QITKOT_DropStart'] = "drop",
-    ['QITKOT_DropStop'] = "stop",
-    ['QITKOT_DropUntil'] = "dropuntil",
-    ['QITKOT_BringAlts'] = "bring",
-    ['QITKOT_SetupAlts'] = "setup",
-    ['QITKOT_CrashCMD'] = "crash",
-    ['QITKOT_TotalCashCount'] = "countcash",
-    ['QITKOT_KickAllAlts'] = "kickalts",
-    ['QITKOT_ToggleFreezeAlts'] = "freeze",
-    ['QITKOT_ShowOrHideWallet'] = "wallet",
-    ['QITKOT_AirLockAlts'] = "airlock",
-    ['QITKOT_ResetAltsCharacters'] = "reset",
-    ['QITKOT_SaySomething'] = "say",
-    ['QITKOT_SetTheFPSCap'] = "fps",
-    ['QITKOT_CashPickingToggle'] = "cashaura",
-    ['QITKOT_AltsVibingLOL'] = "vibe",
-    ['QITKOT_HideAlts'] = "hide",
-    ['QITKOT_AutoDestroyCash'] = 'loopdestroy',
-    ['QITKOT_LoopKillUser'] = 'loopkill',
-    ['QITKOT_StopLoopKill'] = 'stopkill',
-    ['QITKOT_LineUp'] = 'line',
-    ['QITKOT_HoldBlock'] = 'block',
-    ['QITKOT_SpamMessage'] = 'spam',
-    ['QITKOT_NoClip'] = 'noclip',
-    ['QITKOT_ToggleMask'] = 'mask',
-    ['QITKOT_WeightFarm'] = 'weightfarm',
-    ['QITKOT_LettuceFarm'] = 'lettucefarm',
-    ['QITKOT_GodMode'] = 'god',
-    ['QITKOT_StackAlts'] = 'stack',
-    ['QITKOT_CircleAround'] = 'circle',
-    ['QITKOT_ChatSpy'] = 'spy',
-    ['QITKOT_Donate'] = 'donate',
-    ['QITKOT_DupeAlt'] = 'dupe',
-    ['QITKOT_Benxlol'] = 'benx',
-    ['QITKOT_TpPlayerTo'] = 'tp',
-}
-
-getgenv().locations = { -- change "bank" to anything else you want location name to be replaced and used with, same for others down
-    ['QITKOT_InfrontBank'] = "bank",
-    ['QITKOT_AdminBase'] = "admin",
-    ['QITKOT_School'] = 'school',
-    ['QITKOT_Train'] = 'train',
-    ['QITKOT_SafeZone3'] = 'sz3',
-    ['QITKOT_BasketBall'] = 'basket',
-    ['QITKOT_TacoShop'] = 'taco',
-    ['QITKOT_AdminJail'] = 'jail',
-    ['QITKOT_UnderTrain'] = 'undertrain',
-    ['QITKOT_TheClub'] = 'club',
-}
-
--- [[ Launcher ]] --
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/qitkot/scripts/main/dahoodfreealtcontrol.lua", true))()
-
-
-
-
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NoUGotbannedlol/DaHub/main/AltControlFree"))()
